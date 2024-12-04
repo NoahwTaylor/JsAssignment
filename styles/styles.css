@@ -187,6 +187,7 @@ footer{
 li{
     width: 60px;
     margin-right: 20px;
+    text-align: center;
 }
 
 li, .small-button{
