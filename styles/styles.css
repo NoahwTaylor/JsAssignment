@@ -65,6 +65,7 @@ a{
     text-decoration: none;
     color: black;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 main a:hover, footer a:hover{
@@ -173,8 +174,41 @@ footer{
 
 */
 
+.booking-page{
+    width: 600px;
+    font-size: 18px;
+    justify-content: center;
+}
 
+.day-selector{
+    margin-bottom: 12px;
+}
 
+li{
+    width: 60px;
+    margin-right: 20px;
+}
+
+li, .small-button{
+    border: 1px solid black;
+}
+
+.small-button{
+    padding: 5px;
+}
+
+.top-margin{
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+#clear-button{
+    width: 200px;
+}
+
+.clicked{
+    background-color: #E5AF42;
+}
 
 
 
