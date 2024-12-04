@@ -264,6 +264,7 @@ footer{
 .contact textarea {
     height: 150px;
     width: 300px;
+    margin-left: 24px;
 }
 
 .contact input, .contact label, .contact textarea, .contact .fake-button{
