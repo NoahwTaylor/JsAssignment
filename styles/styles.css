@@ -24,6 +24,8 @@ body {
 /* TO DO: all elements with the .flex class applied are to be made into flex-box containers. */
 .flex {
     display: flex;
+    justify-content: center;
+    text-align: center;
 }
 /************* site-wide text styling *************/
 
@@ -41,13 +43,14 @@ body {
 */
 h1{
     font-size: 48px;
-    align-items: center;
     text-align: center;
+    margin: 0;
 }
 
 h2{
     font-size: 36px;
     margin-bottom: 12px;
+    line-height: 36px;
 }
 
 .large-text{
@@ -94,6 +97,9 @@ header, footer{
 header{
     height: 150px;
     margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header img{
@@ -179,6 +185,7 @@ footer{
     width: 600px;
     font-size: 18px;
     text-align: center;
+    margin: 0 auto;
 }
 
 .booking-page .day-selector{
@@ -242,7 +249,7 @@ footer{
 
 .contact label{
     width: 150px;
-    justify-content: right;
+    text-align: right;
 }
 
 .contact input{
