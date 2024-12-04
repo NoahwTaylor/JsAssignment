@@ -274,10 +274,11 @@ footer{
     justify-content: right;
 }
 
-.fake-button{
+.contact .fake-button{
     width: 250px;
     text-align: center;
     justify-content: center;
+    margin: 0 auto;
 }
 
 .contact form{
