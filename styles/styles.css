@@ -213,6 +213,7 @@ footer{
 .booking-page #clear-button{
     width: 200px;
     justify-content: center;
+    margin-bottom: 12px;
 }
 
 .booking-page .clicked{
