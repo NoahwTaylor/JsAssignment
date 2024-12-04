@@ -227,15 +227,6 @@ footer{
     justify-content: center;
 }
 
-
-
-
-
-
-
-
-
-
 /************* contact page *************/
 /* TO DO:
     - the main section of the .contact page will be 420px tall, and centered.
@@ -249,6 +240,7 @@ footer{
     height: 420px;
     justify-content: center;
     text-align: center;
+    margin: 0 auto;
 }
 
 .contact label{
