@@ -148,7 +148,8 @@ footer{
 
 .index .fake-button{
     width: 250px;
-    margin: 150px;
+    margin-right: 75px;
+    margin-left: 75px;
 }
 
 
