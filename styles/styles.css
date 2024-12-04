@@ -278,7 +278,7 @@ footer{
     width: 250px;
     text-align: center;
     justify-content: center;
-    margin: 0 auto;
+    padding: 24px;
 }
 
 .contact form{
