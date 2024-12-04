@@ -273,7 +273,7 @@ footer{
 }
 
 .contact form{
-    flex-direction: row;
+    flex-direction: column;
 }
 
 
