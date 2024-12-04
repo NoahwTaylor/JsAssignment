@@ -21,15 +21,10 @@ body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5;
 }
-
 /* TO DO: all elements with the .flex class applied are to be made into flex-box containers. */
 .flex {
     display: flex;
 }
-
-
- 
-
 /************* site-wide text styling *************/
 
 /* TO DO:
@@ -81,11 +76,6 @@ main a:hover, footer a:hover{
     color: white;
     cursor: pointer;
 }
-
-
-
-
-
 /************* header/footer styling *************/
 
 /* TO DO:
@@ -95,7 +85,37 @@ main a:hover, footer a:hover{
     - there will be 25px of space between the header and main, and 50px of space between main and footer.
     - the footer will be 60px tall with 26px of space around the contents, have a font-weight of 200, and the text within will be centered vertically and horizontally.
 */
+header, footer{
+    background-color: #E5AF42;
+}
 
+header{
+    height: 150px;
+    margin-bottom: 25px;
+}
+
+header img{
+    width: 100px;
+    height: 100px;
+    margin: 25px, 0px, 25px, 25px;
+}
+
+h1{
+    text-align: center;
+}
+
+main{
+    margin-bottom: 50px;
+}
+
+footer{
+    display: flex;
+    height: 60px;
+    padding: 26px;
+    font-weight: 200;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
