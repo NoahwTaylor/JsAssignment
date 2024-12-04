@@ -277,7 +277,7 @@ footer{
 .fake-button{
     width: 250px;
     text-align: center;
-    justify-content: right;
+    justify-content: center;
 }
 
 .contact form{
