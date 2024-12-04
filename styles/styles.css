@@ -177,38 +177,36 @@ footer{
 .booking-page{
     width: 600px;
     font-size: 18px;
-    justify-content: center;
-}
-
-.day-selector{
-    margin-bottom: 12px;
-}
-
-li{
-    width: 60px;
-    margin-right: 20px;
     text-align: center;
 }
 
-li, .small-button{
+.booking-page .day-selector{
+    margin-bottom: 12px;
+}
+
+.booking-page li{
+    width: 60px;
+    margin-right: 20px;
+}
+
+.booking-page li, .booking-page .small-button{
     border: 1px solid black;
 }
 
-.small-button{
+.booking-page .small-button{
     padding: 5px;
 }
 
-.top-margin{
+.booking-page .top-margin{
     margin-top: 24px;
     margin-bottom: 12px;
 }
 
-#clear-button{
+.booking-page #clear-button{
     width: 200px;
-    text-align: center;
 }
 
-.clicked{
+.booking-page .clicked{
     background-color: #E5AF42;
 }
 
