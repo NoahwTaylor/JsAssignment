@@ -274,6 +274,12 @@ footer{
     justify-content: right;
 }
 
+.fake-button{
+    width: 250px;
+    text-align: center;
+    justify-content: right;
+}
+
 .contact form{
     flex-direction: column;
 }
