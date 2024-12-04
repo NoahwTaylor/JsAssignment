@@ -233,6 +233,30 @@ footer{
     - the edges of the button will line up exactly with the text-area element. HINT: time for some math!
 */
 
+.contact main{
+    height: 420px;
+    justify-content: center;
+    text-align: center;
+}
 
+.contact label{
+    width: 150px;
+    justify-content: right;
+}
+
+.contact input{
+    width: 300px;
+    margin-right: 24px;
+}
+
+.contact textarea {
+    height: 150px;
+}
+
+.contact input, .contact label, .contact textarea, .contact .fake-button{
+    line-height: 24px;
+    font-size:  16px;
+    margin-bottom: 24px;
+}
 
 
