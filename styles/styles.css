@@ -139,7 +139,6 @@ footer{
 
 .index h2{
     line-height: 36px;
-    text-align: center;
 }
 
 .index p{
@@ -150,6 +149,7 @@ footer{
     width: 250px;
     margin-right: 75px;
     margin-left: 75px;
+    text-align: center;
 }
 
 
