@@ -204,6 +204,7 @@ li, .small-button{
 
 #clear-button{
     width: 200px;
+    text-align: center;
 }
 
 .clicked{
