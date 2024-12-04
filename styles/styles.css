@@ -272,4 +272,8 @@ footer{
     justify-content: right;
 }
 
+.contact form{
+    flex-direction: row;
+}
+
 
