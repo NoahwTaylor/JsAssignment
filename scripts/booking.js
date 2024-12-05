@@ -16,11 +16,9 @@
 // added challenge: don't update the dayCounter if the same day is clicked more than once. hint: .classList.contains() might be helpful here!
 
 let day_button = document.getElementById('day-selector')
-day_button.addEventListener('click', day_clicked)
+day_button.addEventListener("click", day_clicked)
 
 function day_clicked(){
-
-    let day_button = document.getElementById('day-selector')
     if (day_button.classList.contains('clicked')){
         day_button.classList.remove('clicked');
     } else {
