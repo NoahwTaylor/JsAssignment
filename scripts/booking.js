@@ -58,6 +58,7 @@ let full_day = document.getElementById("full")
 let half_day = document.getElementById("half")
 
 half_day.addEventListener("clicked", half_duration_selected)
+full_day.addEventListener("clicked", full_duration_selected)
 
 function half_duration_selected(){
 
