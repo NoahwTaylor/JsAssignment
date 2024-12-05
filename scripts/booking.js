@@ -39,8 +39,12 @@ let clear_button = document.getElementById('clear-button')
 clear_button.addEventListener("click", clear_days)
 
 function clear_days(){
+
     for (let day_button of day_buttons){
+
         day_button.classList.remove('clicked')
+
+        let calculated_cost = 0
     }
 }
 
@@ -50,6 +54,26 @@ function clear_days(){
 /********* change rate *********/
 // when the half-day button is clicked, set the daily rate to $20, add the "clicked" class to the "half" element, remove it from the "full" element, and recalculate the total cost.
 
+let full_day = document.getElementById("full")
+let half_day = document.getElementById("half")
+
+half_day.addEventListener("clicked", half_duration_selected)
+
+function half_duration_selected(){
+
+    if(!half_day.classList.contains('clicked')){
+        full_day.classList.remove('clicked');
+        half_day.classList.add('clicked')
+    } 
+}
+
+function full_duration_selected(){
+
+    if(!full_day.classList.contains('clicked')){
+        half_day.classList.remove('clicked');
+        full_day.classList.add('clicked')
+    } 
+}
 
 
 
