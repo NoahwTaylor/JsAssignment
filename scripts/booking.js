@@ -70,6 +70,6 @@ function full_duration_selected(){
 // when a calculation is needed, set the innerHTML of the calculated-cost element to the appropriate value
 function calculate(){
     calculated_cost = daily_rate * num_of_days
-    document.getElementById('calculated-cost').innerHTML = calculated_cost
+    document.getElementById("calculated-cost").innerHTML = calculated_cost
 }
  
