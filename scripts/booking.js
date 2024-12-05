@@ -3,6 +3,11 @@
 // Do any of these variables need to be initialized when the page is loaded? 
 // When do they need to be reset or updated?
 
+    let cost_per_day = 0
+    let num_of_days = 0
+
+
+
 
 
 
@@ -10,7 +15,19 @@
 // when the day buttons are clicked, we will apply the "clicked" class to that element, and update any other relevant variables. Then, we can recalculate the total cost.
 // added challenge: don't update the dayCounter if the same day is clicked more than once. hint: .classList.contains() might be helpful here!
 
+let day_button = document.getElementById('day-selector')
+day_button.addEventListener('click', day_clicked)
 
+function day_clicked(){
+
+    let day_button = document.getElementById('day-selector')
+    if (day_button.classList.contains('clicked')){
+        day_button.classList.remove('clicked');
+    } else {
+        day_button.classList.add('clicked');
+    }
+
+}
 
 
 
