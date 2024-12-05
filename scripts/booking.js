@@ -61,19 +61,13 @@ half_day.addEventListener("click", half_duration_selected)
 full_day.addEventListener("click", full_duration_selected)
 
 function half_duration_selected(){
-
-    if(!half_day.classList.contains('clicked')){
-        full_day.classList.remove('clicked');
-        half_day.classList.add('clicked')
-    } 
+    full_day.classList.remove('clicked');
+    half_day.classList.add('clicked')
 }
 
-function full_duration_selected(){
-
-    if(!full_day.classList.contains('clicked')){
-        half_day.classList.remove('clicked');
-        full_day.classList.add('clicked')
-    } 
+function full_duration_selected(){ 
+    half_day.classList.remove('clicked');
+    full_day.classList.add('clicked')   
 }
 
 
