@@ -15,7 +15,7 @@
 // when the day buttons are clicked, we will apply the "clicked" class to that element, and update any other relevant variables. Then, we can recalculate the total cost.
 // added challenge: don't update the dayCounter if the same day is clicked more than once. hint: .classList.contains() might be helpful here!
 
-let day_button = document.getElementById('day-selector')
+let day_button = document.getElementsByClassName('day-selector')
 day_button.addEventListener("click", day_clicked)
 
 function day_clicked(){
