@@ -5,6 +5,7 @@
 
     let daily_rate = 0
     let num_of_days = 10
+    let calculated_cost = 0
 
 
 
@@ -29,6 +30,7 @@ function day_clicked(event) {
     } else {
         day_button.classList.add('clicked');
     }
+    calculate()
 }
 
 /********* clear days *********/
@@ -42,8 +44,11 @@ function clear_days(){
 
     for (let day_button of day_buttons){
         day_button.classList.remove('clicked')
-        let calculated_cost = 0
     }
+
+    num_of_days = 0
+    calculated_cost = 0
+    calculate()
 }
 
 
@@ -59,14 +64,14 @@ half_day.addEventListener("click", half_duration_selected)
 full_day.addEventListener("click", full_duration_selected)
 
 function half_duration_selected(){
-    let daily_rate = 20
+    daily_rate = 20
     full_day.classList.remove('clicked');
     half_day.classList.add('clicked')
     calculate()
 }
 
 function full_duration_selected(){
-    let daily_rate = 35 
+    daily_rate = 35 
     half_day.classList.remove('clicked');
     full_day.classList.add('clicked') 
     calculate()  
@@ -84,8 +89,7 @@ function full_duration_selected(){
 // when a calculation is needed, set the innerHTML of the calculated-cost element to the appropriate value
 function calculate(){
 
-    let calculated_cost = document.getElementById('calculated-cost')
-    let total_cost = daily_rate * num_of_days
-    calculated_cost.innerHTML = total_cost
+    calculated_cost = daily_rate * num_of_days
+    document.getElementById('calculated-cost').innerHTML = total_cost
 }
  
