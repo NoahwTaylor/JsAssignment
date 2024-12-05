@@ -4,14 +4,14 @@
 // When do they need to be reset or updated?
 
     let daily_rate = 0
-    let num_of_days = 10
+    let num_of_days = 0
     let calculated_cost = 0
 
 /********* colour change days of week *********/
 // when the day buttons are clicked, we will apply the "clicked" class to that element, and update any other relevant variables. Then, we can recalculate the total cost.
 // added challenge: don't update the dayCounter if the same day is clicked more than once. hint: .classList.contains() might be helpful here!
 
-let day_buttons = document.getElementsByTagName("li");  // Select all day elements with the 'blue-hover' class
+let day_buttons = document.getElementsByTagName("li"); 
 
 for (let day_button of day_buttons) {
     day_button.addEventListener("click", day_clicked);
@@ -22,8 +22,10 @@ function day_clicked(event) {
 
     if (day_button.classList.contains('clicked')) {
         day_button.classList.remove('clicked');
+        num_of_days -= 1
     } else {
         day_button.classList.add('clicked');
+        num_of_days += 1
     }
     calculate()
 }
