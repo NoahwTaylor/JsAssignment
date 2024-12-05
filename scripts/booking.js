@@ -22,9 +22,8 @@ for (let day_button of day_buttons) {
 }
 
 function day_clicked(event) {
-    let day_button = event.target; // The element that was clicked
+    let day_button = event.target; 
 
-    // Toggle the 'clicked' class
     if (day_button.classList.contains('clicked')) {
         day_button.classList.remove('clicked');
     } else {
@@ -32,12 +31,18 @@ function day_clicked(event) {
     }
 }
 
-
-
 /********* clear days *********/
 // when the clear-button is clicked, the "clicked" class is removed from all days, any other relevant variables are reset, and the calculated cost is set to 0.
 
+let clear_button = document.getElementById('clear-button')
 
+clear_button.addEventListener("click", clear_days)
+
+function clear_days(){
+    for (let day_button of day_buttons){
+        day_button.classList.remove('clicked')
+    }
+}
 
 
 
